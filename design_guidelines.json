@@ -1,0 +1,86 @@
+{
+  "theme": "dark",
+  "archetype": "5 (Luxury)",
+  "design_vision": "A dark, moody, and cinematic portfolio combining minimal editorial aesthetics with high-contrast asymmetric layouts. Deep charcoals replace pure black for depth, allowing the photography to act as the primary light source and focal point.",
+  "colors": {
+    "background_primary": "#0A0A0C",
+    "background_secondary": "#121216",
+    "text_primary": "#F5F5F0",
+    "text_secondary": "#A1A1AA",
+    "accent": "#FFFFFF",
+    "border": "rgba(255, 255, 255, 0.1)",
+    "surface": "rgba(255, 255, 255, 0.03)"
+  },
+  "typography": {
+    "heading_font": "Cormorant Garamond",
+    "body_font": "Outfit",
+    "heading_scale": {
+      "h1": "text-5xl sm:text-6xl+ tracking-tighter font-light",
+      "h2": "text-4xl sm:text-5xl tracking-tight font-light",
+      "h3": "text-2xl sm:text-3xl tracking-tight",
+      "overline": "text-xs tracking-[0.2em] uppercase font-sans text-secondary"
+    },
+    "body_scale": "text-base sm:text-lg leading-relaxed font-light"
+  },
+  "layout_and_spacing": {
+    "philosophy": "Generous spacing. Let the images breathe. Use padding like p-12 or p-24 between major sections.",
+    "container": "max-w-7xl mx-auto px-6 sm:px-12",
+    "grid_strategy": "Mode A: Tetris Grid for portfolio highlights, masonry for full galleries. Avoid perfect symmetry."
+  },
+  "components": {
+    "header": "Crystal Glass variant (backdrop-blur-xl bg-black/60) or Solid background that fades out. Fixed at top. Logo on left, links on right.",
+    "buttons": "Minimalist. 1px solid border, transparent background. Hover: bg-white text-black. transition-all duration-300.",
+    "cards": "Cardless design for pricing and services. Use subtle 1px border on bottom or left to anchor the content instead of full boxes.",
+    "gallery_filters": "Text-based navigation. Active state is white, inactive is gray. Underline animation on hover.",
+    "lightbox": "Full-screen dark overlay (bg-black/95) with minimalist UI (close, next, prev).",
+    "admin_dashboard": "Clean, utilitarian, grid-based. Use Shadcn UI for forms, tables, dialogs (Upload Modal)."
+  },
+  "motion_and_interactions": {
+    "scroll": "Lenis for smooth scrolling (momentum).",
+    "hover_effects": "Image grayscale to color on hover, or slight scale-up (scale-105) inside overflow-hidden containers.",
+    "page_load": "Slow image reveals. Fade in up for text elements."
+  },
+  "icons": "lucide-react for minimal, stroke-based icons (e.g., arrow right, close, menu, instagram).",
+  "media": {
+    "hero_background": "",
+    "portfolio_portrait": [
+      "https://images.unsplash.com/photo-1532170579297-281918c8ae72?auto=format&fit=crop&w=800&q=80",
+      "https://images.pexels.com/photos/21316136/pexels-photo-21316136.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "https://images.unsplash.com/photo-1675726205553-4e348f24da2c?auto=format&fit=crop&w=800&q=80"
+    ],
+    "portfolio_editorial": [
+      "https://images.unsplash.com/photo-1629511565591-a1d494ad6c58?auto=format&fit=crop&w=800&q=80",
+      "https://images.pexels.com/photos/20483654/pexels-photo-20483654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "https://images.unsplash.com/photo-1611702817472-92bdc6582fba?auto=format&fit=crop&w=800&q=80"
+    ],
+    "portfolio_street": [
+      "https://images.unsplash.com/photo-1713981276443-62ac6f3ed564?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1695963279977-f20918e05dbf?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1673095288333-ac62dbbad575?auto=format&fit=crop&w=800&q=80"
+    ],
+    "portfolio_travel": [
+      "https://images.unsplash.com/photo-1551309292-e185c0b6e22a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1670702146868-bc7797ef47a5?auto=format&fit=crop&w=800&q=80",
+      "https://images.pexels.com/photos/10701705/pexels-photo-10701705.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    ],
+    "portfolio_events": [
+      "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1563841930606-67e2bce48b78?auto=format&fit=crop&w=800&q=80",
+      "https://images.pexels.com/photos/18433033/pexels-photo-18433033.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    ],
+    "about_image": "https://images.pexels.com/photos/16077161/pexels-photo-16077161.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  "instructions_to_main_agent": [
+    "Use pure HTML + Tailwind for marketing/portfolio layouts. Avoid Shadcn for creative grids.",
+    "Use Shadcn UI primarily for the Admin/Upload section (Forms, Inputs, Dialogs, Tables).",
+    "Install and use Lenis for smooth scrolling.",
+    "Install framer-motion for slow image reveals, parallax on scroll, and category filter transitions.",
+    "Ensure all fonts are imported from Google Fonts (Cormorant Garamond and Outfit).",
+    "The Hero section must NOT use a generic centered card. Use an asymmetric layout with a large striking image, photographer name 'flicksfromnai', and editorial typography.",
+    "Gallery needs a lightbox viewer (framer-motion AnimatePresence is great for this).",
+    "Data-testid attributes MUST be added to all interactive elements for testing.",
+    "Contact section has NO form. Only email, IG link, and location, styled elegantly.",
+    "Use the provided image URLs as placeholders in the frontend. Admin section will allow uploading new ones.",
+    "Use .js files (JSX syntax) for all React components as per the project environment, NOT .tsx files."
+  ]
+}

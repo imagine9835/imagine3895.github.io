@@ -143,7 +143,7 @@ const Hero = ({ heroPhoto }) => (
 );
 
 const Marquee = () => {
-  const words = ["Portrait", "Editorial", "Travel", "Street", "Weddings", "Brand", "Film"];
+  const words = ["Portrait", "Editorial", "Sports", "Street", "Events", "Brand", "Film"];
   const line = [...words, ...words, ...words];
   return (
     <section className="border-y border-white/5 py-8 overflow-hidden">
@@ -257,50 +257,6 @@ const Categories = () => (
   </section>
 );
 
-const About = ({ aboutImage }) => (
-  <section
-    id="about"
-    data-testid="about-section"
-    className="max-w-7xl mx-auto px-6 sm:px-12 py-24 sm:py-32 grid lg:grid-cols-12 gap-12 items-center"
-  >
-    <div className="lg:col-span-5 img-zoom aspect-[3/4]">
-      <img src={aboutImage} alt="about" className="w-full h-full object-cover" />
-    </div>
-    <div className="lg:col-span-7 lg:pl-12">
-      <div className="text-[10px] uppercase tracking-[0.4em] text-[#a1a1aa] mb-6">
-        About / 03
-      </div>
-      <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl tracking-tight font-light leading-[1.05]">
-        I make pictures
-        <br />
-        that <span className="italic">feel quiet</span>,
-        <br />
-        even when they aren't.
-      </h2>
-      <p className="mt-8 text-base sm:text-lg text-[#a1a1aa] leading-relaxed max-w-xl">
-        Hi, I'm Nai — a self-taught photographer working between portrait,
-        editorial and travel. My work lives in the in-between: the half-second
-        before a smile, the long shadow after golden hour, the small rituals
-        people don't notice they have.
-      </p>
-      <div className="mt-12 grid grid-cols-3 gap-6 max-w-md">
-        {[
-          { k: "120+", v: "Shoots delivered" },
-          { k: "5", v: "Years behind the lens" },
-          { k: "11", v: "Cities, counting" },
-        ].map((s) => (
-          <div key={s.v} className="border-l border-white/15 pl-4">
-            <div className="font-serif text-3xl text-[#f5f5f0]">{s.k}</div>
-            <div className="text-[10px] uppercase tracking-[0.25em] text-[#a1a1aa] mt-1">
-              {s.v}
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-);
-
 const Services = () => (
   <section
     id="services"
@@ -311,7 +267,7 @@ const Services = () => (
       <div className="grid lg:grid-cols-12 gap-8 mb-16">
         <div className="lg:col-span-5">
           <div className="text-[10px] uppercase tracking-[0.4em] text-[#a1a1aa] mb-6">
-            Services / 04
+            Services / 03
           </div>
           <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl tracking-tight font-light leading-[1.05]">
             Sessions <span className="italic">&amp;</span> rates
@@ -393,7 +349,7 @@ const Contact = () => (
     <div className="max-w-7xl mx-auto px-6 sm:px-12 py-24 sm:py-32 grid lg:grid-cols-12 gap-12">
       <div className="lg:col-span-6">
         <div className="text-[10px] uppercase tracking-[0.4em] text-[#a1a1aa] mb-6">
-          Contact / 05
+          Contact / 04
         </div>
         <h2 className="font-serif text-4xl sm:text-6xl lg:text-8xl tracking-tighter font-light leading-[0.95]">
           Let's make
@@ -435,7 +391,7 @@ const Contact = () => (
             <MapPin className="w-3 h-3" strokeWidth={1.5} /> Based in
           </div>
           <div className="font-serif text-3xl sm:text-4xl" data-testid="contact-location">
-            Available worldwide
+            Baltimore, Maryland
           </div>
         </div>
         <div className="pt-8 border-t border-white/10 text-sm text-[#a1a1aa] leading-relaxed">
@@ -459,8 +415,6 @@ export default function Home() {
   }, []);
 
   const heroPhoto = photos[0];
-  const aboutImage =
-    "https://images.pexels.com/photos/16077161/pexels-photo-16077161.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1200";
 
   return (
     <div>
@@ -468,7 +422,6 @@ export default function Home() {
       <Marquee />
       <FeaturedGrid photos={photos} onOpen={(i) => setLightboxIndex(i)} />
       <Categories />
-      <About aboutImage={aboutImage} />
       <Services />
       <Contact />
       {lightboxIndex !== null && photos[lightboxIndex] && (

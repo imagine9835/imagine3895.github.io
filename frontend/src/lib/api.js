@@ -40,6 +40,6 @@ export const CATEGORIES = [
   { key: "portrait", label: "Portrait" },
   { key: "editorial", label: "Editorial" },
   { key: "street", label: "Street" },
-  { key: "travel", label: "Travel" },
+  { key: "sports", label: "Sports" },
   { key: "events", label: "Events" },
 ];

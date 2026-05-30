@@ -140,10 +140,10 @@ DEFAULT_PHOTOS = [
     {"category": "street", "image_url": "https://images.unsplash.com/photo-1713981276443-62ac6f3ed564?auto=format&fit=crop&w=1200&q=80", "title": "Crosswalk", "caption": "Street series", "featured": False, "order": 7},
     {"category": "street", "image_url": "https://images.unsplash.com/photo-1695963279977-f20918e05dbf?auto=format&fit=crop&w=1200&q=80", "title": "Neon Hours", "caption": "Night street", "featured": True, "order": 8},
     {"category": "street", "image_url": "https://images.unsplash.com/photo-1673095288333-ac62dbbad575?auto=format&fit=crop&w=1200&q=80", "title": "Passerby", "caption": "Candid street", "featured": False, "order": 9},
-    # travel
-    {"category": "travel", "image_url": "https://images.unsplash.com/photo-1551309292-e185c0b6e22a?auto=format&fit=crop&w=1200&q=80", "title": "Coastlines", "caption": "Travel diary", "featured": True, "order": 10},
-    {"category": "travel", "image_url": "https://images.unsplash.com/photo-1670702146868-bc7797ef47a5?auto=format&fit=crop&w=1200&q=80", "title": "Distant Hills", "caption": "Mountain travel", "featured": False, "order": 11},
-    {"category": "travel", "image_url": "https://images.pexels.com/photos/10701705/pexels-photo-10701705.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1200", "title": "Roads Less Traveled", "caption": "Travel photography", "featured": False, "order": 12},
+    # sports
+    {"category": "sports", "image_url": "https://images.unsplash.com/photo-1551309292-e185c0b6e22a?auto=format&fit=crop&w=1200&q=80", "title": "Game Day", "caption": "Sports series", "featured": True, "order": 10},
+    {"category": "sports", "image_url": "https://images.unsplash.com/photo-1670702146868-bc7797ef47a5?auto=format&fit=crop&w=1200&q=80", "title": "On the Court", "caption": "Action sports", "featured": False, "order": 11},
+    {"category": "sports", "image_url": "https://images.pexels.com/photos/10701705/pexels-photo-10701705.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1200", "title": "Sideline", "caption": "Sports photography", "featured": False, "order": 12},
     # events
     {"category": "events", "image_url": "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&w=1200&q=80", "title": "First Dance", "caption": "Wedding day", "featured": True, "order": 13},
     {"category": "events", "image_url": "https://images.unsplash.com/photo-1563841930606-67e2bce48b78?auto=format&fit=crop&w=1200&q=80", "title": "Celebration", "caption": "Event coverage", "featured": False, "order": 14},

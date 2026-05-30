@@ -5,7 +5,6 @@ import { Menu, X, Instagram } from "lucide-react";
 const navItems = [
   { to: "/", label: "Home", end: true },
   { to: "/portfolio", label: "Portfolio" },
-  { to: "/#about", label: "About", anchor: true },
   { to: "/#services", label: "Services", anchor: true },
   { to: "/#contact", label: "Contact", anchor: true },
 ];

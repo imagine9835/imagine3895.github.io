@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowUpRight, Instagram, Mail, MapPin } from "lucide-react";
+import { ArrowUpRight, Instagram, Phone, MapPin } from "lucide-react";
 import { fetchPhotos, CATEGORIES } from "@/lib/api";
 import Lightbox from "@/components/Lightbox";
 
@@ -96,7 +96,7 @@ const Hero = ({ heroPhoto }) => (
       </span>
     </div>
 
-    <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-12 pt-40 pb-24 flex flex-col h-[92vh] justify-between">
+    <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-12 pt-32 sm:pt-40 pb-16 sm:pb-24 flex flex-col min-h-[92vh] justify-between gap-12">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -111,27 +111,27 @@ const Hero = ({ heroPhoto }) => (
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          className="font-serif text-[18vw] sm:text-[14vw] md:text-[11vw] lg:text-[9rem] leading-[0.95] tracking-tighter font-light text-[#f5f5f0]"
+          className="font-serif text-[19vw] sm:text-[14vw] md:text-[11vw] lg:text-[9rem] leading-[0.95] tracking-tighter font-light text-[#f5f5f0]"
         >
           flicks
           <span className="italic font-light"> from</span>
           <br />
-          <span className="block text-right pr-2">nai.</span>
+          <span className="block text-right pr-1 sm:pr-2">nai.</span>
         </motion.h1>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.1 }}
-          className="mt-10 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6"
+          className="mt-8 sm:mt-10 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6"
         >
-          <p className="max-w-md text-base sm:text-lg text-[#a1a1aa] leading-relaxed font-light">
+          <p className="max-w-md text-sm sm:text-lg text-[#a1a1aa] leading-relaxed font-light">
             Quiet portraits, slow light and unhurried moments — captured on
             film and digital across the city and the road.
           </p>
           <Link
             to="/portfolio"
             data-testid="hero-cta"
-            className="group inline-flex items-center gap-3 border border-white/20 px-6 py-3 text-xs uppercase tracking-[0.3em] hover:bg-[#f5f5f0] hover:text-[#0a0a0c] transition-colors duration-300"
+            className="self-start sm:self-auto group inline-flex items-center gap-3 border border-white/20 px-5 sm:px-6 py-3 text-[11px] sm:text-xs uppercase tracking-[0.3em] hover:bg-[#f5f5f0] hover:text-[#0a0a0c] transition-colors duration-300"
           >
             View the work
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:rotate-45" strokeWidth={1.5} />
@@ -395,7 +395,7 @@ const Contact = () => (
         <div className="text-[10px] uppercase tracking-[0.4em] text-[#a1a1aa] mb-6">
           Contact / 05
         </div>
-        <h2 className="font-serif text-5xl sm:text-7xl lg:text-8xl tracking-tighter font-light leading-[0.95]">
+        <h2 className="font-serif text-4xl sm:text-6xl lg:text-8xl tracking-tighter font-light leading-[0.95]">
           Let's make
           <br />
           <span className="italic">something</span>
@@ -406,14 +406,14 @@ const Contact = () => (
       <div className="lg:col-span-6 lg:pl-12 space-y-10 text-lg">
         <div>
           <div className="text-[10px] uppercase tracking-[0.3em] text-[#a1a1aa] mb-3 flex items-center gap-2">
-            <Mail className="w-3 h-3" strokeWidth={1.5} /> Email
+            <Phone className="w-3 h-3" strokeWidth={1.5} /> Phone
           </div>
           <a
-            href="mailto:hello@flicksfromnai.com"
-            data-testid="contact-email"
-            className="font-serif text-3xl sm:text-4xl link-underline"
+            href="tel:+14436573873"
+            data-testid="contact-phone"
+            className="font-serif text-3xl sm:text-4xl link-underline break-words"
           >
-            hello@flicksfromnai.com
+            (443) 657-3873
           </a>
         </div>
         <div>
@@ -425,7 +425,7 @@ const Contact = () => (
             target="_blank"
             rel="noreferrer"
             data-testid="contact-instagram"
-            className="font-serif text-3xl sm:text-4xl link-underline"
+            className="font-serif text-3xl sm:text-4xl link-underline break-words"
           >
             @flicksfromnai
           </a>
@@ -439,8 +439,8 @@ const Contact = () => (
           </div>
         </div>
         <div className="pt-8 border-t border-white/10 text-sm text-[#a1a1aa] leading-relaxed">
-          For bookings, editorial enquiries and collaborations — please include
-          dates, location and a short note about the project.
+          For bookings and collaborations — text or DM with your date,
+          location and a short note about the shoot.
         </div>
       </div>
     </div>

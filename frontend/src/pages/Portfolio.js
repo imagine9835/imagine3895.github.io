@@ -28,7 +28,7 @@ export default function Portfolio() {
         <div className="text-[10px] uppercase tracking-[0.4em] text-[#a1a1aa] mb-6">
           Archive — {active}
         </div>
-        <h1 className="font-serif text-6xl sm:text-7xl lg:text-8xl tracking-tighter font-light leading-[0.95]">
+        <h1 className="font-serif text-5xl sm:text-7xl lg:text-8xl tracking-tighter font-light leading-[0.95] break-words">
           The <span className="italic">archive.</span>
         </h1>
         <p className="mt-6 max-w-xl text-[#a1a1aa] text-base sm:text-lg">

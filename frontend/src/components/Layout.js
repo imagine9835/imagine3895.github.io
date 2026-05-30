@@ -126,11 +126,18 @@ const Footer = () => (
     data-testid="site-footer"
     className="border-t border-white/5 mt-32 py-12 px-6 sm:px-12"
   >
-    <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-xs uppercase tracking-[0.2em] text-[#a1a1aa]">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-xs uppercase tracking-[0.2em] text-[#a1a1aa]">
       <div className="font-serif text-base normal-case tracking-tight text-[#f5f5f0]">
         flicks<span className="italic">fromnai</span>
       </div>
-      <div>© {new Date().getFullYear()} — All frames reserved</div>
+      <a
+        href="tel:+14436573873"
+        className="hover:text-[#f5f5f0] transition-colors normal-case tracking-normal"
+        data-testid="footer-phone"
+      >
+        (443) 657-3873
+      </a>
+      <div className="text-center">© {new Date().getFullYear()} — All frames reserved</div>
       <a
         href="https://www.instagram.com/flicksfromnai/"
         target="_blank"
